@@ -14,6 +14,10 @@ body {
     background-color: #f8f8f8;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header styles */
 header {
     background-color: #60609f;
@@ -129,56 +133,51 @@ section p {
 
 
 /* Contact form styles */
-.contact {
-    background-color: #f8f8f8;
-    padding: 2rem;
+/* Form styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
     border-radius: 10px;
-    margin-bottom: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.contact h2 {
-    font-size: 2rem;
-    color: #60609f;
-    text-align: center;
-    margin-bottom: 1rem;
+form label {
+    display: block;
+    margin-bottom: 10px;
 }
 
-.contact form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact label {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    color: #60609f;
-}
-
-.contact input[type="text"],
-.contact input[type="email"],
-.contact textarea {
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border width are included in the total width */
 }
 
-.contact textarea {
-    resize: vertical;
-}
-
-.contact input[type="submit"] {
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
     background-color: #60609f;
     color: #fff;
-    padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.contact input[type="submit"]:hover {
-    background-color: #43436f;
+/* Center the form elements */
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form input[type="submit"] {
+    display: block;
+    margin: 0 auto;
 }
+
 
 /* Footer styles */
 footer {
