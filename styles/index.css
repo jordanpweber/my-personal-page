@@ -127,6 +127,59 @@ section p {
     }
 }
 
+
+/* Contact form styles */
+.contact {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #60609f;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #60609f;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact input[type="submit"] {
+    background-color: #60609f;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #43436f;
+}
+
 /* Footer styles */
 footer {
     background-color: #60609f;
